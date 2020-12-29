@@ -1,0 +1,133 @@
+{
+  "ndkFolder": "/Users/jing/Library/Android/sdk/ndk",
+  "messages": [
+    {
+      "level": "INFO",
+      "message": "android.ndkVersion from module build.gradle is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "ndk.dir in local.properties is /Users/jing/Library/Android/sdk/ndk"
+    },
+    {
+      "level": "INFO",
+      "message": "ANDROID_NDK_HOME environment variable is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "sdkFolder is /Users/jing/Library/Android/sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk by ndk.dir"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/simpleperf in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/platforms in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/wrap.sh in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/21.0.6113669 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/meta in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/python-packages in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/prebuilt in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/sources in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/build in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/toolchains in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/shader-tools in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering /Users/jing/Library/Android/sdk/ndk/sysroot in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk-bundle in SDK ndk-bundle folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/simpleperf in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/platforms in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/wrap.sh in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/21.0.6113669 in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/meta in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/python-packages in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/prebuilt in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/sources in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/build in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/toolchains in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/shader-tools in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected /Users/jing/Library/Android/sdk/ndk/sysroot in SDK ndk folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Found requested ndk.dir (/Users/jing/Library/Android/sdk/ndk) which has version 20.0.5594570"
+    }
+  ]
+}

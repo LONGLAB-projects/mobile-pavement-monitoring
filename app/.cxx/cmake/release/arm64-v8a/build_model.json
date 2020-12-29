@@ -1,0 +1,74 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master",
+      "sdkFolder": "/Users/jing/Library/Android/sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/build/intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app",
+      "makeFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/.cxx",
+      "cxxFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx",
+      "ndkFolder": "/Users/jing/Library/Android/sdk/ndk",
+      "ndkVersion": "20.0.5594570",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_STL\u003dc++_static"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "release",
+    "soFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/build/intermediates/cmake/release/lib",
+    "objFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/build/intermediates/cmake/release/obj",
+    "jsonFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release",
+    "gradleBuildOutputFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARM64_V8A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a",
+  "jsonFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a",
+  "objFolder": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/build/intermediates/cmake/release/obj/arm64-v8a",
+  "buildCommandFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/build_command.txt",
+  "buildOutputFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/build_output.txt",
+  "modelOutputFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/CMakeLists.txt",
+    "toolchainWrapperFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/build_generation_state.json",
+    "cacheKeyFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/compiler_cache_key.json",
+    "compilerCacheUseFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/compiler_cache_use.json",
+    "compilerCacheWriteFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cxx/release/arm64-v8a/compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/json_generation_record.json",
+  "compileCommandsJsonFile": "/Users/jing/Documents/Lehigh/Study/20Spring/DOTModel-master/app/.cxx/cmake/release/arm64-v8a/compile_commands.json"
+}

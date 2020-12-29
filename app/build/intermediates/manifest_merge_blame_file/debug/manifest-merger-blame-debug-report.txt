@@ -1,0 +1,330 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9     http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="org.tensorflow.dot"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="21"
+23-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="28" />
+24-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:21:5-65
+26-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:21:22-62
+27
+28    <uses-feature android:name="android.hardware.camera" />
+28-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:22:5-60
+28-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:22:19-57
+29    <uses-feature android:name="android.hardware.camera.autofocus" />
+29-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:23:5-70
+29-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:23:19-67
+30
+31    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+31-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:24:5-79
+31-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:24:22-77
+32    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+32-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:25:5-80
+32-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:25:22-78
+33    <uses-permission android:name="android.permission.INTERNET" />
+33-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:26:5-67
+33-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:26:22-64
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+34-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:27:5-79
+34-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:27:22-76
+35    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+35-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:28:5-81
+35-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:28:22-78
+36    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+36-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:29:5-79
+36-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:29:22-76
+37    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+38
+39    <uses-feature
+39-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+40        android:glEsVersion="0x00020000"
+40-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+41        android:required="true" />
+41-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+42
+43    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+43-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:24:5-68
+43-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:24:22-65
+44    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+44-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+44-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+45    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+45-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:26:5-110
+45-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
+46
+47    <application
+47-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:32:5-89:19
+48        android:allowBackup="true"
+48-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:32:18-44
+49        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+49-->[androidx.core:core:1.1.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\331630a23dfa1f0594bcf54d5352aa36\core-1.1.0\AndroidManifest.xml:24:18-86
+50        android:debuggable="true"
+51        android:icon="@drawable/ic_launcher"
+51-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:36:9-45
+52        android:label="Road Damage Detector"
+52-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:35:9-45
+53        android:largeHeap="true"
+53-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:33:9-33
+54        android:theme="@style/Theme.AppCompat.Light"
+54-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:37:9-53
+55        android:usesCleartextTraffic="true" >
+55-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:34:9-44
+56        <activity android:name="org.tensorflow.dot.LoginActivity" >
+56-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:39:9-45:20
+56-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:39:19-66
+57
+58            <!-- <intent-filter> -->
+59            <!-- <action android:name="android.intent.action.MAIN" /> -->
+60            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+61            <!-- </intent-filter> -->
+62        </activity>
+63        <activity
+63-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:47:9-51:20
+64            android:name="org.tensorflow.dot.RegisterActivity"
+64-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:47:19-69
+65            android:exported="true"
+65-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:48:13-36
+66            android:parentActivityName="org.tensorflow.dot.LoginActivity" >
+66-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:49:13-74
+67        </activity>
+68        <activity android:name="org.tensorflow.dot.MainPage" >
+68-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:52:9-57:20
+68-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:52:19-61
+69            <intent-filter>
+69-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:53:13-56:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:54:17-69
+70-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:54:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:55:17-77
+72-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:55:27-74
+73            </intent-filter>
+74        </activity>
+75        <activity
+75-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:58:9-61:20
+76            android:name="org.tensorflow.dot.Profile"
+76-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:58:19-60
+77            android:parentActivityName="org.tensorflow.dot.MainPage" >
+77-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:59:13-69
+78        </activity>
+79        <activity
+79-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:62:9-65:20
+80            android:name="org.tensorflow.dot.Contact"
+80-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:62:19-60
+81            android:parentActivityName="org.tensorflow.dot.MainPage" >
+81-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:63:13-69
+82        </activity>
+83        <activity
+83-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:66:9-69:20
+84            android:name="org.tensorflow.dot.Privacy"
+84-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:66:19-60
+85            android:parentActivityName="org.tensorflow.dot.MainPage" >
+85-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:67:13-69
+86        </activity>
+87        <activity
+87-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:70:9-73:20
+88            android:name="org.tensorflow.dot.Purpose"
+88-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:70:19-60
+89            android:parentActivityName="org.tensorflow.dot.MainPage" >
+89-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:71:13-69
+90        </activity>
+91        <activity
+91-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:74:9-77:20
+92            android:name="org.tensorflow.dot.viewImages"
+92-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:74:19-63
+93            android:parentActivityName="org.tensorflow.dot.MainPage" >
+93-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:75:13-69
+94        </activity>
+95        <activity
+95-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:79:9-87:20
+96            android:name="org.tensorflow.dot.DetectorActivity"
+96-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:79:19-69
+97            android:parentActivityName="org.tensorflow.dot.MainPage"
+97-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:81:19-75
+98            android:screenOrientation="portrait" >
+98-->C:\Users\ranra\StudioProjects\DOT-Application\app\src\main\AndroidManifest.xml:80:19-55
+99
+100            <!-- <intent-filter> -->
+101            <!-- <action android:name="android.intent.action.MAIN" /> -->
+102
+103
+104            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+105            <!-- </intent-filter> -->
+106        </activity>
+107
+108        <!-- Needs to be explicitly declared on P+ -->
+109        <uses-library
+109-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+110            android:name="org.apache.http.legacy"
+110-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+111            android:required="false" />
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\82653396968af777fdb1f59f7c3ba8c3\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+112
+113        <service
+113-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\0f6d031d13d6f6e74a025b94169d16d3\jetified-firebase-storage-17.0.0\AndroidManifest.xml:30:9-34:19
+114            android:name="com.google.firebase.components.ComponentDiscoveryService"
+114-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\0f6d031d13d6f6e74a025b94169d16d3\jetified-firebase-storage-17.0.0\AndroidManifest.xml:30:18-89
+115            android:directBootAware="true"
+115-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+116            android:exported="false" >
+116-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:35:13-37
+117            <meta-data
+117-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\0f6d031d13d6f6e74a025b94169d16d3\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+118                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+118-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\0f6d031d13d6f6e74a025b94169d16d3\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\0f6d031d13d6f6e74a025b94169d16d3\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+120            <meta-data
+120-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:36:13-38:85
+121                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+121-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-database:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\76ebe0f8a0db11632e8d84aa8cf05b0f\jetified-firebase-database-17.0.0\AndroidManifest.xml:30:13-32:85
+124                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+124-->[com.google.firebase:firebase-database:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\76ebe0f8a0db11632e8d84aa8cf05b0f\jetified-firebase-database-17.0.0\AndroidManifest.xml:31:17-109
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-database:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\76ebe0f8a0db11632e8d84aa8cf05b0f\jetified-firebase-database-17.0.0\AndroidManifest.xml:32:17-82
+126            <meta-data
+126-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
+127                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+127-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+130                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+130-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+132        </service>
+133
+134        <activity
+134-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
+135            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+135-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:25:13-85
+136            android:excludeFromRecents="true"
+136-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:26:13-46
+137            android:exported="true"
+137-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:27:13-36
+138            android:launchMode="singleTask"
+138-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:28:13-44
+139            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+139-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:29:13-102
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.google.firebase:firebase-auth:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ccd405cd87d778df13bfd90a19d39606\jetified-firebase-auth-17.0.0\AndroidManifest.xml:30:13-72
+141
+142        <receiver
+142-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+143            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+143-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+144            android:exported="true"
+144-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+145            android:permission="com.google.android.c2dm.permission.SEND" >
+145-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+146            <intent-filter>
+146-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+147                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+147-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+147-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+148            </intent-filter>
+149        </receiver>
+150
+151        <activity
+151-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+152            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+152-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+153            android:exported="false"
+153-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+154            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+154-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+155
+156        <provider
+156-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+157            android:name="com.google.firebase.provider.FirebaseInitProvider"
+157-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+158            android:authorities="org.tensorflow.dot.firebaseinitprovider"
+158-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+159            android:exported="false"
+159-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+160            android:initOrder="100" />
+160-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d369b80514ab5940445cd7a7e2379ded\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+161
+162        <receiver
+162-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
+163            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+163-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
+164            android:enabled="true"
+164-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
+165            android:exported="false" >
+165-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
+166        </receiver>
+167        <receiver
+167-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
+168            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+168-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
+170            android:exported="true"
+170-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
+171            android:permission="android.permission.INSTALL_PACKAGES" >
+171-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
+172            <intent-filter>
+172-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
+173                <action android:name="com.android.vending.INSTALL_REFERRER" />
+173-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
+173-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
+174            </intent-filter>
+175        </receiver>
+176
+177        <service
+177-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
+178            android:name="com.google.android.gms.measurement.AppMeasurementService"
+178-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
+179            android:enabled="true"
+179-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
+180            android:exported="false" />
+180-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
+181        <service
+181-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
+182            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+182-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
+183            android:enabled="true"
+183-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
+185            android:permission="android.permission.BIND_JOB_SERVICE" />
+185-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
+186
+187        <meta-data
+187-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d523b0bb6a7d5b9befc69cfef963d78f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+188            android:name="com.google.android.gms.version"
+188-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d523b0bb6a7d5b9befc69cfef963d78f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+189            android:value="@integer/google_play_services_version" />
+189-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\ranra\.gradle\caches\transforms-2\files-2.1\d523b0bb6a7d5b9befc69cfef963d78f\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+190    </application>
+191
+192</manifest>
