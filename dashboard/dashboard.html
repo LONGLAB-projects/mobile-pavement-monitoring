@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #over_map {
+            position: absolute;
+            top: 10px;
+            left: 89%;
+            z-index: 99;
+            background-color: #ccffcc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<div id="over_map">
+    <div>
+        <span>Existing road damages: </span><span id="cars">0</span>
+    </div>
+</div>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+    // Replace your Configuration here..
+    var config = {
+        apiKey: "AIzaSyA85fgjLdOVVRoFg8CYy7eN0Okne-mJ3Yg",
+        authDomain: "dot-project-2fc5f.firebaseapp.com",
+        databaseURL: "https://dot-project-2fc5f.firebaseio.com",
+        projectId: "dot-project-2fc5f",
+        storageBucket: "dot-project-2fc5f.appspot.com",
+        messagingSenderId: "59204701648"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script>
+
+    // counter for online cars...
+    var cars_count = 0;
+
+    // markers array to store all the markers, so that we could remove marker when any car goes offline and its data will be remove from realtime database...
+    var markers = [];
+    var map;
+    function initMap() { // Google Map Initialization...
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: new google.maps.LatLng(31.52011, 74.368604),
+            mapTypeId: 'terrain'
+        });
+    }
+
+    // This Function will create a car icon with angle and add/display that marker on the map
+    function AddCar(data) {
+
+        var location = { lat: data.val().latitude, lng: data.val().longitude };
+
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+
+        var position = data.val().longitude+","+data.val().latitude;
+        var type = data.val().type;
+
+        markers[data] = marker; // add marker in the markers array...
+
+        marker.setMap(map);
+
+        var img = data.val().imgUrl;
+
+        var contentString = '<div id="content">'+
+            "<div><h4>Location: "+position+"</h4></div>"+
+            "<div><img src=\'"+img+"\'></div>"+
+            "<div><h5>Damage Type: "+type+"</h5></div>"+
+            '</div>';
+
+
+        var infowindow=new google.maps.InfoWindow({
+            content:contentString
+        });
+
+        var currentPopup;
+
+        google.maps.event.addListener(marker, "click", function() {
+            if (currentPopup != null) {
+                currentPopup.close();
+                currentPopup = null;
+            }
+            infowindow.open(map, marker);
+            currentPopup = infowindow;
+        });
+
+        google.maps.event.addListener(infowindow, "closeclick", function() {
+            map.panTo(center);
+            currentPopup = null;
+        });
+
+        document.getElementById("cars").innerHTML = cars_count;
+    }
+
+    // get firebase database reference...
+    var cars_Ref = firebase.database().ref('/new_spot');
+
+    // this event will be triggered when a new object will be added in the database...
+    cars_Ref.on('child_added', function (data) {
+        cars_count++;
+        AddCar(data);
+    });
+
+    // this event will be triggered on location change of any car...
+    cars_Ref.on('child_changed', function (data) {
+        markers[data].setMap(null);
+        AddCar(data);
+    });
+
+    // If any car goes offline then this event will get triggered and we'll remove the marker of that car...
+    cars_Ref.on('child_removed', function (data) {
+        markers[data].setMap(null);
+        cars_count--;
+        document.getElementById("cars").innerHTML = cars_count;
+    });
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ5gps-pRi0-e4E_u8ZAnTWDEt38vCRuI&callback=initMap">
+</script>
+
+</body>
+</html>
