@@ -22,6 +22,7 @@ SOFTWARE.
 ---------------------------------------------------------------------------------
 # We use the model of @sekilab in github to predict the road damage conditions.
 # This model is used in detectoractivity.java
+
 MIT License
 
 Copyright (c) 2018 sekilab
