@@ -36,9 +36,9 @@ System architecture and instruction to revise the system.
 - Dashboard: dashboard.html: Implement the dashboard webpage.
 
 Where to get the codebase? 
-Android & Dashboard: 
-https://github.com/LONGLAB-projects/mobile-pavement-monitoring
-Firebase: https://console.firebase.google.com/u/0/project/dot-project-2fc5f/database
+
+- Android & Dashboard: https://github.com/LONGLAB-projects/mobile-pavement-monitoring.
+- Firebase: https://console.firebase.google.com/u/0/project/dot-project-2fc5f/database.
 
 What is needed to compile the code base?
 Import the whole project into Android Studio and run it.
