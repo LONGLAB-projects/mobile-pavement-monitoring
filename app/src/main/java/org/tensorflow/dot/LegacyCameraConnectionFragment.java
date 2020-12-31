@@ -1,5 +1,3 @@
-package org.tensorflow.dot;
-
 /*
  * Copyright 2017 The TensorFlow Authors. All Rights Reserved.
  *
@@ -16,6 +14,7 @@ package org.tensorflow.dot;
  * limitations under the License.
  */
 
+package org.tensorflow.dot;
 import android.app.Fragment;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
