@@ -18,12 +18,12 @@
 # Developer Manual for DOT Project - Android Application
 
 
-- System architecture and instruction to revise the system.
-- Android: Because the code is developed based on a tensorflow example. It is divided into three parts:
+System architecture and instruction to revise the system.
+## Android: Because the code is developed based on a tensorflow example. It is divided into three parts:
 - Main functionality part: 
 - CameraActivity.java: Ask for permission to access the camera, GPS, storage and so on. Track the camera activity. 
 - DetectorActivity.java: Load model, make prediction, upload image data to cloud database and save detected images in local storage. If you want to obtain any other information - about the results, write code here.
-- Additional functionality part:
+## Additional functionality part:
 - MainPage.java(with mainpage.xml): The entrance of the application.
 - Contact.java(with contact.xml): If a user has any suggestion, they can submit it here.
 - Privacy.java(with privacy.xml): Privacy policy(copied from Google Map).
@@ -31,7 +31,7 @@
 - viewImages.java(with activity_usage_example_gridview.xml): Present the detected images in grid view.
 - LoginActivity.java(with login.xml): Temporarily unused. Users can login into their account.
 - RegisterActivity.java(with register.xml): Temporarily unused. Users can register one account.
-- The remaining java files are written by the tensorflow team and they are not modified.
+## The remaining java files are written by the tensorflow team and they are not modified.
 - Besides, the ssd model and label json file are located in the assets folder.
 - Dashboard: dashboard.html: Implement the dashboard webpage.
 
