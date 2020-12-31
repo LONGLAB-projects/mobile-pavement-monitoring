@@ -97,7 +97,7 @@ Sync this app in Android Studio to ensure that all dependencies have the necessa
 
 Step 1:
 	
-	Add a web app in the project overview page. 
+Add a web app in the project overview page. 
 
 Step 2:
 
