@@ -105,11 +105,11 @@ Step 2:
 
 You can get your Firebase SDKs and add them in the dashboard code. Find the following part of code and replace it with your new firebase SDKs.
 
-var firebaseConfig = {
-  apiKey: "API_KEY",
-  authDomain: "PROJECT_ID.firebaseapp.com",
-  databaseURL: "https://PROJECT_ID.firebaseio.com",
-  projectId: "PROJECT_ID",
-  storageBucket: "PROJECT_ID.appspot.com",
-  messagingSenderId: "SENDER_ID",
-};
+	var firebaseConfig = {
+	  apiKey: "API_KEY",
+	  authDomain: "PROJECT_ID.firebaseapp.com",
+	  databaseURL: "https://PROJECT_ID.firebaseio.com",
+	  projectId: "PROJECT_ID",
+	  storageBucket: "PROJECT_ID.appspot.com",
+  	  messagingSenderId: "SENDER_ID",
+	  };
