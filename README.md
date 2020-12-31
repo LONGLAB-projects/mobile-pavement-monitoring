@@ -53,8 +53,9 @@ Generate an apk file from Android Studio and install it on an Android phone.
 
 ## Attempt at Client Certificates.
 - Example Server Configuration variables:
+- ![image](IMG/server.png)
 - Generating Certificates:
-
+- ![image](IMG/certificate.png)
 
 
 
