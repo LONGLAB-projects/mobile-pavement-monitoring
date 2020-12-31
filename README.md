@@ -48,7 +48,7 @@ Generate an apk file from Android Studio and install it on an Android phone.
 
 How to obtain the RoadDamageDetector model?
 -(from https://github.com/sekilab/RoadDamageDetector/)
--(fromhttps://mycityreport.s3-ap-northeast-1.amazonaws.com/02_RoadDamageDataset/public_data/Japan/CACAIE2018/trainedModels.tar.gz 
+-(fromhttps://mycityreport.s3-ap-northeast-1.amazonaws.com/02_RoadDamageDataset/public_data/Japan/CACAIE2018/trainedModels.tar.gz)
 Note: Prior to April 21st, the above link was broken, and the models were initially obtained by decompiling (unzip APK > model is located in assets folder) the APK package of RoadDamageDetector. 
 
 Attempt at Client Certificates
