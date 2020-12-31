@@ -15,7 +15,7 @@
 --The code from @sekilab has a MIT license. We also include it in the license file
 --You can check other details in the license file 
 
-Developer Manual for DOT Project - Android Application
+# Developer Manual for DOT Project - Android Application
 
 
 System architecture and instruction to revise the system.
@@ -58,7 +58,7 @@ Generating Certificates:
 
 
 
-Database connection (Firebase - app)
+#Database connection (Firebase - app)
 
 Step 1:
 
@@ -93,7 +93,7 @@ Sync this app in Android Studio to ensure that all dependencies have the necessa
 
 
 
-Database connection (Firebase - dashboard)
+#Database connection (Firebase - dashboard)
 
 Step 1:
 	
