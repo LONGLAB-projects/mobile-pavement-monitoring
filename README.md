@@ -58,7 +58,7 @@ Generating Certificates:
 
 
 
-#Database connection (Firebase - app)
+# Database connection (Firebase - app)
 
 Step 1:
 
@@ -93,7 +93,7 @@ Sync this app in Android Studio to ensure that all dependencies have the necessa
 
 
 
-#Database connection (Firebase - dashboard)
+# Database connection (Firebase - dashboard)
 
 Step 1:
 	
