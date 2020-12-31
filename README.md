@@ -67,29 +67,30 @@ Create a new firebase project via this link: https://console.firebase.google.com
 
 Step 2:
 
-Register this application in the created firebase project.
-Go to Your created firebase console.
-In the center of the project overview page, go to project setting and click the Android icon or Add app to launch the setup workflow.
-Enter the app’s package name (org.tensorflow.dot) in the Android package name field. 
-Enter the App nickname and Debug signing certificate SHA-1.
-Click Register App.
+- gister this application in the created firebase project.
+- Go to Your created firebase console.
+- In the center of the project overview page, go to project setting and click the Android icon or Add app to launch the setup workflow.
+- Enter the app’s package name (org.tensorflow.dot) in the Android package name field. 
+- Enter the App nickname and Debug signing certificate SHA-1.
+- Click Register App.
+- [image](IMG/step2.png)
 
 How to get the SHA-1
+- [image](IMG/SHA.png)
 
 
 Step 3:
 Add the Firebase configuration file.
-
+- [image](IMG/step3.png)
 
 Step 4:
 Add Firebase SDKs to your app.
-
+- [image](IMG/step4.png)
 
 Step 5:
 
 Sync this app in Android Studio to ensure that all dependencies have the necessary versions.
-
-
+- [image](IMG/step5.png)
 
 
 
