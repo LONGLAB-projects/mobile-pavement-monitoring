@@ -21,8 +21,8 @@
 System architecture and instruction to revise the system.
 ## Android: Because the code is developed based on a tensorflow example. It is divided into three parts:
 - Main functionality part: 
-- CameraActivity.java: Ask for permission to access the camera, GPS, storage and so on. Track the camera activity. 
-- DetectorActivity.java: Load model, make prediction, upload image data to cloud database and save detected images in local storage. If you want to obtain any other information - about the results, write code here.
+- CameraActivity.java: Asks for permission to access the camera, GPS, storage and so on. Tracks the camera activity. 
+- DetectorActivity.java: Loads model, makes prediction, uploads image data to cloud database and saves detected images in local storage. If you want to obtain any other information about the results, write code here.
 ## Additional functionality part:
 - MainPage.java(with mainpage.xml): The entrance of the application.
 - Contact.java(with contact.xml): If a user has any suggestion, they can submit it here.
@@ -33,7 +33,7 @@ System architecture and instruction to revise the system.
 - RegisterActivity.java(with register.xml): Temporarily unused. Users can register one account.
 ## The remaining java files are written by the tensorflow team and they are not modified.
 - Besides, the ssd model and label json file are located in the assets folder.
-- Dashboard: dashboard.html: Implement the dashboard webpage.
+- Dashboard: dashboard.html: Implements the dashboard webpage.
 
 Where to get the codebase? 
 
@@ -67,8 +67,8 @@ Create a new firebase project via this link: https://console.firebase.google.com
 
 Step 2:
 
-- gister this application in the created firebase project.
-- Go to Your created firebase console.
+- Register this application in the created firebase project.
+- Go to your created firebase console.
 - In the center of the project overview page, go to project setting and click the Android icon or Add app to launch the setup workflow.
 - Enter the app’s package name (org.tensorflow.dot) in the Android package name field. 
 - Enter the App nickname and Debug signing certificate SHA-1.
