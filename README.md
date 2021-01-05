@@ -17,9 +17,9 @@
 # Developer Manual for DOT Project - Android Application
 
 
-System architecture and instruction to revise the system.
-## Android: Because the code is developed based on a tensorflow example. It is divided into three parts:
-- Main functionality part: 
+System architecture and instruction to revise the system. 
+Android: Because the code is developed based on a tensorflow example. It is divided into three parts:
+## Main functionality part: 
 - CameraActivity.java: Asks for permission to access the camera, GPS, storage and so on. Tracks the camera activity. 
 - DetectorActivity.java: Loads model, makes prediction, uploads image data to cloud database and saves detected images in local storage. If you want to obtain any other information about the results, write code here.
 ## Additional functionality part:
