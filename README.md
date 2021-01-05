@@ -10,9 +10,9 @@
 
 # License
 
--- We commented the code with Apache lincense Version 2.0 in the code file
--- The code from @sekilab has a MIT license in the license file
--- You can check other details in the license file 
+- We commented the code with Apache lincense Version 2.0 in the code file
+- We present the MIT license of the code from @sekilab in the license file
+- You can check other details in the license file 
 
 # Developer Manual for DOT Project - Android Application
 
