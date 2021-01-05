@@ -6,8 +6,7 @@
 
 # Dashboard
 
-- The web page dashboard is in the file Dashboard
-- You can find the source code dashboard.html in the file
+- The web page dashboard.html is in the Dashboard folder 
 
 # License
 
