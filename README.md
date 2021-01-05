@@ -32,7 +32,8 @@ System architecture and instruction to revise the system.
 - RegisterActivity.java(with register.xml): Temporarily unused. Users can register one account.
 ### Other files
 - The remaining java files are written by the tensorflow team and they are not modified. Besides, the ssd model and label json file are located in the assets folder.
-## Dashboard: dashboard.html: Implements the dashboard webpage.
+## Dashboard: To show the existing detected pavement damages in google map 
+- dashboard.html: Implements the dashboard webpage.
 
 Where to get the codebase? 
 
